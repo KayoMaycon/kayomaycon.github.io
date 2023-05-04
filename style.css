@@ -36,18 +36,56 @@ a {
   padding-right: 146px;
   align-items: center;
 }
+#exemplo-comando {
+  color: blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+}
+/* Isso é um comentário em CSS */
+.nome-da-classe {
+  color:darkgreen;
+  text-align: center;
+}
+/* Comentários podem se extender 
+por mais de uma linha */
+#dotted{
+  border-style: dotted;
+}
+#dashed{
+  border-style: dashed;
+}
+#solid{
+  border-style: solid;
+}
+#double{
+  border-style: double;
+}
+#groove{
+  border-style: groove;
+}
+#ridge{
+  border-style: ridge;
+}
+#inset{
+  border-style: inset;
+}
+#outset{
+  border-style: outset;
+}
+#none{
+  border-style: none;
+}
+#hidden{
+  border-style: hidden;
+}
   
-  
-  footer{ 
-    display: table;
-    width:100%;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color:black;
-    color:white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  
-  
+footer{ 
+  display: table;
+  width:100%;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color:black;
+  color:white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
