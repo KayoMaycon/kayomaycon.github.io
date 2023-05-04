@@ -1,32 +1,329 @@
 <!DOCTYPE html>
-<html>
-    <heady>
-        <title> Introdução à Programação Web </title>
-    </heady>
-    <body>
-        <center> <img src="img/iflogo.jpeg" height="300px"> </center>
-        <center> <h2> Discentes: Ana Esttefane, Kayo Maycon, Larissa Miranda, Uenderson Carvalho
-        <br>
-        Docente: Stefani Pires
-        <br>
-        Curso/Turma: 4º Informática. </h2> </center>
-        <br>
-        <center> <h1> Este site tem o objetivo de auxiliar estudantes que estão começando a programar sites em HTML e CSS! </h1></center>
-        <br>
-        <h2> HTML: </h2>
-        <p align="justify"><font size="5"> Criada pelo britânico Tim Berners-Lee, o acrônimo HTML significa HiperText Markup Language, traduzindo ao português: Linguagem de Marcação de Hipertexto. 
-        <br>
-        <br>
-            O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. </font></p> 
-        <center> <img src="img/html.jpeg" height="250px"> </center>
-        <center> <h3> Aprenda os comandos básicos de HTML em <a href="html.html"> HTML para iniciantes </h3> </a> </center>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>TAGS EM HTML</title>
+    <link rel="icon" href="imgs/conhecimento.png" type="image/x-icon">
+</head>
+<body>
+    <center>
+    <header>
+       <font size = "12"> &lt;h1> <font color="white">HTML</font> &lt;/h1> </font>
+    </header>
 
-        <h2> CSS: </h2>
-        <p align="justify"><font size="5"> O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). 
+    <nav style = "background-color: rgb(36, 36, 85);" >
+        <table>
+            <tr>
+            <th> <a href="inicio.html"> INÍCIO </a> </th> 
+            <th> <a class="active" href="index.html"> HTML</a> </th>
+            <th> <a href="css.html"> CSS </a> </th>
+        </tr>       
+        </table>
+    </nav>
+</center>
+<br>
+<div class="container">
+    <h1>Estrutura básica HTML:</h1>
+<font size ="5">
+    
+    <p id="ajeitar"> A estrutura básica em html é composta por:
         <br>
         <br>
-            O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento.</font>
-        <center> <img src="img/css.png" height="250px"> </center>
-        <center> <h3> Aprenda os comandos básicos de CSS em <a href="css.html"> CSS para iniciantes </h3> </a> </center>
-    </body>
+         Doctype: que não é uma tag HTML, mas uma instrução para o navegador e outros programas que o código encontrado ali é um código HTML. 
+        <br>
+        <br>
+        Head: Tag que contém informações que não são passadas visivelmente para leitor da página. São dados implícitos, de uso e controle da página, como a vinculação com outros arquivos. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e o fechamento da tag head. Nesta parte tambem fica a tag title, na qual é inserido o titulo da página.
+        <br>
+        <br>
+        Body: Trata-se da página em si, ou seja, a informação legível para o leitor da página, e todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída.
+    </p>
+
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/estru2.PNG"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/estruBasresu.png"> </center>
+</font>
+<hr>
+<h1> As tags h1 a h6</h1> 
+<font size ="5">
+    
+    <p>  São elementos HTML de cabeçalho da seção. Os elementos h1 a h6 representam seis níveis de título de seção. h1 é o nível de seção mais alto e h6 é o mais baixo. </p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/tit.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/titresu.png"> </center>
+
+</font>
+<hr>
+    <h1> Comentarios em HTML </h1>
+
+<font size ="5">
+    <p> A tag &lt;!----> é utilizada para realizar comentários no nosso código, eles não aparecerão </p>
+    <br>
+    <center p> Veja um exemplo:</p></center>
+    <center> <img src="imgs/coment.png"> </center>
+    <br>
+    <br>
+    <center p> nada aparece na página:</p></center>
+    <center> <img src="imgs/comentresu.png"> </center>
+</font>
+<hr>
+    <h1>TAG P </h1>
+
+<font size ="5">
+    <p> A tag "p" é utilizada para demarcar um parágrafo do texto contido na página</p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/p.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/pR.PNG"> </center>
+
+</font>
+<hr>
+    <h1>TAG br </h1>
+
+<font size ="5">
+    <p> A tag "br" é utilizada para dar espaço de um elemento (texto, mídia) a outro</p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/tagbr2.PNG"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/espaçoresul.png"> </center>
+
+</font>
+<hr>
+    <h1>TAG small </h1>
+
+<font size ="5">
+    <p> A tag &lt;SMALL> é utilizada para reduzir o tamanho da fonte numa determinada parte definida de um texto.</p>
+    <br>
+    <p class="center"> Veja um exemplo no código e seu resultado no navegador:</p>
+    <p class="center"> código:</p>
+    <center> <img src="imgs/sma.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/smar.PNG"> </center>
+
+</font>
+<hr>
+    <h1>TAG hr </h1>
+
+<font size ="5">
+    <p> A tag &lt;hr> representa uma quebra de linha temática entre os elementos HTML. ela
+         é exibida como uma linha, que separa os conteúdos de uma página web.</p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/HR.PNG"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/HRR.PNG"> </center>
+
+</font>
+<hr>
+    <h1>TAG mark </h1>
+
+<font size ="5">
+    <p> A tag &lt;mark> destaca um trecho de um texto com uma cor</p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/mark.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/markres.PNG"> </center>
+
+</font>
+<hr>
+    <h1>TAG strong </h1>
+
+<font size ="5">
+    <p> A tag &lt;strong> transforma um trecho ou palavra de um texto em negrito</p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/negri.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/negriresu.PNG"> </center>
+
+</font>
+<hr>
+    <h1>TAG table </h1>
+
+<font size ="5">
+    <p> A tag &lt;table> juntamente com os elementos &lt;th> e &lt;tr> geram uma tabela </p>
+    <br>
+    <center p> Veja um exemplo no código e seu resultado no navegador:</p></center>
+    <center p> código:</p></center>
+    <center> <img src="imgs/table.png"> </center>
+    <br>
+    <br>
+    <center p> resultado:</p></center>
+    <center> <img src="imgs/tableres.PNG"> </center>
+    <hr>
+    <br>
+        <br>
+        <h2> Criando listas </h2>
+        <p align="justify"><font size="5"> As listas são muito importantes quando queremos listar alguns itens no site e também para a criação de menu de navegação. </font></p>
+        <h2> Listas ordenadas: </h2>
+        <p align="justify"><font size="5"> Uma lista ordenada começa com a tag &lt;ol> e seus respectivos itens da lista ficam dentro da tag &lt;li>. Por padrão as listas ordenadas são ordenadas por números, mas também iremos ver como ordena-la por outros métodos. Exemplo: 
+        <br>
+        <center> <img src="img/listaordenada1.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultlistaord1.jpg"> </center>
+        <br>
+        <br>
+        Podemos ordenar também por a,b,c,d, etc. Caso queira que seja ordenada por letras, basta acrescentar &lt;ol type="a">.
+        <br>
+        <br>
+        <center> <img src="img/listaordenada2.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultlistaord2.jpg"> </center>
+        <br>
+        Além desses dois tipos de ordenação, existem diversos tipos como por exemplo, Algarismos Romanos.
+        <br>
+        <br>
+        <h3> Listas desordenadas: </h3>
+        Já as Listas desordenadas são iniciadas com a tag &lt;ul> e finalizadas com &lt;/ul>.
+        <br>
+        <br>
+        <center> <img src="img/listadesordenada.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultdesord.jpg"> </center>
+        <h3> Lista por definição: </h3>
+        Já as Listas por definição são um pouco mais diferente, elas são representadas pela tag &lt;dl>, seguido de &lt;dt> e &lt;dd>, ficando assim no código:
+        <br>
+        <br>
+        <center> <img src="img/listapordefini.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultlistapordefini.jpg"> </center>
+        <hr>
+        <h3> A tag âncora &lt;a> </h3>
+        Essa tag define um hiperlink, que é usado para vincular de uma página a outra.
+        <br>
+        <br>
+        O atributo mais importante do elemento é o atributo, que indica o destino do link: &lt;a href:"">
+        <br>
+        <br>
+        Por padrão, os links aparecerão da seguinte forma em todos os navegadores:
+        <br>
+        <br>
+        Um link não visitado é sublinhado e azul
+        <br>
+        Um link visitado é sublinhado e roxo
+        <br>
+        Um link ativo é sublinhado e vermelho
+        <br>
+        <br>
+        <h3> Exemplo: </h3>
+        <br>
+        <center> <img src="img/linkahref.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <a href="https://www.nasa.gov"> Site da NASA </a> </center>
+        <hr>
+        <h3> Adicionando ícone em uma página: </h3>
+        Para adicionar ícone em uma página basta preencher a tag &lt;link rel="icon"> no cabeçalho com uma imagem e direcioná-la à página através do &lt;href>. Exemplo:
+        <br>
+        <br>
+        <center> <img src="img/icon1.jpg"> </center>
+        <br>
+        <hr>
+        <h3> Tag &lt;div> </h3>
+        O elemento &lt;iv> define uma divisão ou seção em um documento HTML. O elemento div é frequentemente usado como um contêiner para outros elementos, o que facilita na estilização de blocos. 
+        <br>
+        <br>
+        Por padrão, a div gera uma line-break (quebra de linha) automática ao ser utilizada. Isso ocorre pois possui como display padrão um elemento de bloco, ou seja display block. 
+        Portanto, para utilizar a div, basta colocar os elementos que quiser dentro da tag &lt;div> como na sintaxe abaixo:
+        <br>
+        <br>
+        <center> <img src="img/div1.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultdiv.jpg"> </center>
+        <hr>
+        <h3> Tag &lt;Style> </h3>
+        O elemento &lt;style> contém informações de estilo para um documento ou uma parte do documento. Exemplos:
+        <br>
+        <br>
+        <h4> Aplicando uma folha de estilo simples: </h4>
+        <center> <img src="img/style1.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultstyle1.jpg"> </center>
+        <br>
+        <h4> Aplicando uma folha de estilo com escopo: </h4>
+        <br>
+        <center> <img src="img/style2.jpg"> </center>
+        <br>
+        <center> O resultado aparecerá assim: </center>
+        <br>
+        <center> <img src="img/resultstyle2.jpg"> </center>
+        <hr>
+        <h3> Tag &lt;img src> </h3>
+        Para colocar uma única imagem em uma página da web, usamos o elemento &lt;img>. Isso é um elemento vazio (quer dizer que não possui conteúdo de texto ou tag de fechamento) que requer no mínimo um atributo para ser útil — src (às vezes pronunciado como seu título completo, source). 
+        <br>
+        <br>
+        O atributo src contém um caminho apontando para a imagem que você deseja incorporar na página, que pode ser uma URL relativa ou absoluta.
+        <br>
+        <br>
+        Por exemplo, se sua imagem for chamada dinossauro.jpg, e está no mesmo diretório de sua página HTML, você poderia inserir a imagem assim:
+        <br>
+        <br>
+        <center> <img src="img/imgsrc1.jpg"> </center>
+        <br>
+        Se a imagem estivesse em um subdiretório de images, que estivesse dentro do mesmo diretório da página HTML, então você a incorporaria da seguinte maneira:
+        <br>
+        <br>
+        <center> <img src="img/imgsrc2.jpg"> </center> </font>
+    
+        <hr>
+    <br>
+    Todos os codigos e seus respectivos exemplos foram feitos por nós mesmos no editor de código Visual Studio Code da microsft, e testados no web browser google choorme. Realizamos as respectivas capturas de tela e as anexamos aqui.
+    <br>
+    <br>
+    <br>
+</div>
+<font size ="6">
+<footer>
+    <dl>
+      <dt> <font color= "blue">&lt;p></font>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DA BAHIA<font color= "blue">&lt;/p></font></dt>
+      <br>
+      <dt> &lt;/<font color= "blue">HTML</font>></dt>
+    </dl>
+</footer>
+</font>
+</body>
 </html>
