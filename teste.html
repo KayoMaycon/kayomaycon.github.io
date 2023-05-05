@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>CSS</title>
+    <link rel="icon" href="imgs/conhecimento.png" type="image/x-icon">
+</head>
+<body>
+    <center>
+    <header>
+       <font size = "12"> &lt;h1> <font color="white">HTML</font> &lt;/h1> </font>
+    </header>
+
+    <nav style = "background-color: rgb(36, 36, 85);" >
+        <table>
+            <tr>
+            <th> <a href="inicio.html"> INÍCIO </a> </th> 
+            <th> <a href="index.html"> HTML</a> </th>
+            <th> <a class="active" href="css.html"> CSS </a> </th>
+        </tr>       
+        </table>
+    </nav>
+</center>
+<br>
+
+<div class="container">
+<font size ="5">
+<p> CSS é a sigla para Cascading Style Sheet, ou Folhas em Estilo Cascata. </p>
+
+    <p> A função do CSS é estilizar os elementos HTML de forma simples e mais organizada. Dessa forma, todas as instruções sobre como esses elementos devem ser apresentados na tela podem ser feitas utilizando a tag &ltstyle&gt dentro do arquivo HTML ou em um arquivo separado, geralmente com o nome de "style.css"; isso facilita a manutenção das páginas web uma vez que temos o conteúdo da página separado dos comandos que irão compor o design desse conteúdo. </p>
+
+    <center> <img src="img/style-css.png"> </center>
+</font>
+
+    <h1> Sintaxes </h1>
+<font size ="5">
+    <p> Para entender como o CSS indica o design de um elemento HTML precisamos entender como são compostas suas sintaxes: </p>
+
+    <p> Todo comando em CSS precisa de um seletor seguido por um bloco, representado por chaves.</p>
+
+    <p> O seletor é composto pela tag HTML que indicará quais partes da página, que estão dentro daquela tag, serão afetadas por aqueles comandos, como por exempo &lth1&gt, &ltp&gt &ltmark&gt etc. As declarações contidas no bloco que vem logo após o seletor devem conter a propriedade a ser alterada e o valor (característica) que você deseja atribuir a ela </p>
+
+    <p id="exemplo-comando"> No exemplo abaixo podemos perceber a estrutura do comando CSS e os parâmetros que estão sendo aplicados a esse parágrafo aqui. </p>
+
+    <center> <img src="img/exemplo-comando.png"> </center>
+
+    <p> Nesse caso temos color, font-family e font-size como como as propriedades do parágrafo e logo em seguida os valores que serão atribuídos a elas para compor o design do parágrafo.</p>
+    <br>
+</font>
+
+    <h1> Comentários </h1>
+<font size ="5">
+    <p> Comentários em CSS são indicados por /* e */ </p>
+    <center> <img src="img/comentario-css.png"> </center>
+    <br>
+</font>
+
+    <h1> Seletores </h1>
+<font size ="5">
+    <p> Os seletores em CSS são usados como uma forma de identificar quais os elementos que devem receber aquelas características, uma vez que as tags podem ser utilizadas mais de uma vez na página web. Vamos ver agora alguns tipos de seletores e suas funções: </p>
+
+    <p> Utilizar apenas a tag como seletor implica que todos os conteúdos que utilizam aquela tag receberão aqueles valores. Nesse caso não há distinção entre os diferentes usos daquela tag, então ela padroniza todos os conteúdos de uma única vez. </p>
+
+    <center> <img src="img/seletor-tag.png"> </center>
+
+    <p> O seletor id utiliza o id de um elemento HTML para identificar qual conteúdo dentre todos que compartilham a mesma tag deve receber aqueles valores. Seu propósito é selecionar um único conteúdo e aplicar esses parâmetros únicos a ele, para fazer isso basta adicionar uma hashtag (#) seguido do id do elemento. </p>
+    <p> OBS: É importante ter em mente que o nome do id não pode começar com um número.</p>
+
+    <center> <img src="img/seletor-id.png"> </center>
+
+    <p> O seletor class faz a seleção de elementos HTML que possuem uma classe específica atribuída a ele. Para fazer isso basta adicionar um ponto (.) seguido do nome da classe que você deu aos elementos que deseja estilizar. </p>
+    <p> Diferente do seletor id, o seletor class é usado para atribuir o mesmo estilo a diferentes elementos HTML, fazendo isso uma única vez para que não haja repetição desnecessária de código e traga mais eficácia na hora de utilizar o CSS. </p>
+
+    <h3 class="nome-da-classe"> Heading de exemplo do seletor class </h3>
+    <p class="nome-da-classe"> Parágrafo de exemplo do seletor class </p>
+
+    <center> <img src="img/html-seletor-class.png"> </center> <br>
+    <center> <img src="img/css-seletor-class.png"> </center>
+
+    <p> Se desejar, você pode também especificar as tags que deverão ser afetadas pelo seletor class, por exemplo: utilizar o comando p.nome-da-classe indica que apenas os paragráfos irão receber aqueles parâmetros, mesmo que outras tags também estejam designadas essa classe. Pode-se também atribuir duas classes a um mesmo elemento, basta apenas indicar o nome das duas no class="". </p>
+
+    <p> Para selecionar todos os elementos HTML de uma determinada página basta apenas usar um asterisco (*) como seletor, e para agrupar diferentes elementos que possuem os mesmos valores de estilo basta indicar as tags dos mesmos na posição do seletor, separando-as por vírgulas.  </p>
+    <br>
+</font>
+
+    <h1> Como inserir o CSS no código HTML </h1>
+<font size ="5">
+    <p> Existem três maneiras de inserir o CSS dentro de um código HTML, são elas: external CSS, internal CSS e inline CSS </p>
+
+    <h2> 1. External CSS </h2>
+
+    <p> Nesse primeiro caso, o CSS está contido em uma página diferente, referenciada com a tag &ltlink&gt na seção &lthead&gt do documento HTML. Essa página é destinada apenas a CSS e portanto não deve conter códigos em HTML. </p>
+    <center> <img src="img/external-css.png"> </center>
+
+    <p> É assim que a página deve se parecer: </p>
+    <center> <img src="img/pagina-css.png"> </center>
+
+    <h2> 2. Internal CSS </h2>
+
+    <p> Nesse segundo caso, o CSS estará contido dentro do documento HTML, dentro da tag &ltstyle&gt, que se encontra na seção &lthead&gt. É utilizada principalmente quando aquela página específica possui um design diferente das demais páginas. </p>
+    <center> <img src="img/internal-css.png"> </center>
+
+    <h2> 3. Inline CSS </h2>
+
+    <p> No terceiro e último caso o CSS é incorporado diretamente nas tags HTML. Isso pode causar certa desorganização no código, portanto é recomendado que não seja a forma principal usada para incorporar o CSS à pagina HTML. </p>
+
+    <h4 style="color:indigo; font-family: 'Segoe UI'; text-align: center;"> Heading contendo inline CSS </h4>
+    <center> <p style="color:darkmagenta;"> Paragráfo contendo inline CSS </p> <center>
+    <center> <img src="img/inline-css.png"> </center>
+
+    <h4> OBS: Se mais uma maneira de inserção do CSS for usada para um único elemento, o estilo que prevalecerá será o último a ser executado no código. </h4>
+
+    <p> Quando mais de um estilo for utilizado a ordem de prioridade será sempre: inline CSS, external e internal CSS, e por fim o design padrão do navegador. </p>
+    <br>
+</font>
+
+    <h1> Bordas </h1>
+<font size ="5">
+    <p> O CSS possui uma propriedade que define bordas aos elementos. A propriedade "border-style" é responsável por indicar o tipo de borda e pode comportar até 4 tipos diferentes de bordas (uma para cada lado). Os tipos existentes são: </p>
+
+    <ul> 
+        <li> border-style: dotted;  </li>
+        <li> border-style: dashed;  </li>
+        <li> border-style: solid; </li>
+        <li> border-style: double;  </li>
+        <li> border-style: groove;  </li>
+        <li> border-style: ridge; </li>
+        <li> border-style: inset;  </li>
+        <li> border-style: outset;  </li>
+        <li> border-style: none; </li>
+        <li> border-style: hidden; </li>
+    </ul>
+
+    <center> <p id="dotted"> border-style: dotted; </p>
+      <p id="dashed"> border-style: dashed; </p>
+      <p id="solid"> border-style: solid; </p>
+      <p id="double"> border-style: double; </p>
+      <p id="groove"> border-style: groove; </p>
+      <p id="ridge"> border-style: ridge; </p>
+      <p id="inset"> border-style: inset; </p>
+      <p id="outset"> border-style: outset; </p>
+      <p id="none"> border-style: none; </p>
+      <p id="hidden"> border-style: hidden; </p> </center>
+
+
+    <p> Você pode também especificar a largura e a cor da borda usando os comandos "border-width" e "border-color", respectivamente. Para arredondar as bordas basta utilizar "border-radius".</p>
+    <br>
+</font>
+
+    <h1> Margens </h1>
+<font size ="5">
+    <p> As margens definem o espaço entre um elemento e os elementos a sua volta, fora das bordas. </p>
+
+    <p> As 4 propriedades de uma margem são: </p>
+    
+    <ul>
+        <li> margin-top: parte de cima da margem </li>
+        <li> margin-bottom: parte de baixo da margem </li>
+        <li> margin-right: parte direita da margem </li>
+        <li> margin-left: parte esquerda da margem  </li>
+    </ul>
+
+    <p> Elas podem receber os valores: auto (calculada pela navegador); length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdada de um outro elemento). </p>
+    <br>
+</font>
+
+    <h1> Padding </h1>
+<font size ="5">
+    <p> O padding define o espaço entre um elemento e sua borda. Assim como a margem, o padding possui 4 propriedades: </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
+</font>
+
+<h1> Height/Width </h1>
+<font size ="5">
+    <p> São responsáveis por estipular as proporções do objeto no mundo HTML, o height é referente à altura, enquanto o width determina a largura do elemento. Veja na prática: </p>
+    <img style="width: 30%;" src="img/web.jpg">
+    <p>(width recebe 30% da tela do navegador)</p>
+    <img style="height: 100px;" src="img/web.jpg">
+    <p>(height recebe 100px)</p>
+    <img style="width: 100px; height: 10px;" src="img/web.jpg">
+    <p>(width recebe 100px e o height 10px)</p>
+    <p> Note que quando somente uma das propriedades é especificada (height/width) automaticamente o complemento é ajustado respeitando as proporções iniciais. Os valores podem ser expressos em '%' ou 'px', porcentagem e pixels respectivamente. </p>
+</font>
+
+<h1> Box Model </h1>
+<font size ="5">
+    <p> O termo "Modelo de Caixa" se dá devido a estruturação do HTML seguir um padrão em blocos, os elementos que o compõe são: </p>
+    
+    <img src="img/box.png">
+
+    <p> Por meio do CSS é possível manusear esses espaços atribuindo valores aos mesmos de acordo com o contexto da aplicação. </p>
+</font>
+
+<h1> Outline </h1>
+<font size ="5">
+    <p> É uma linha desenhada aos redor dos elementos, é importante se atentar para não confundir com as bordas, pois elas são externas a tais. As propriedades são: outline-style, outline-color, outline-width, outline-offset e outline. </p>
+    <p>Testando diferentes estilos:</p>
+    <p style="outline-style: dotted;">dotted</p>
+    <p style="outline-style: dashed;">dashed</p>
+    <p style="outline-style: double;">double</p>
+ 
+</font>
+
+<h1> Text </h1>
+<font size ="5">
+    <p> A color é a propriedade usada para definir a cor do texto. O backgound-color é refente a cor do fundo. </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> A text-alignpropriedade é usada para definir o alinhamento horizontal de um texto. Um texto pode ser alinhado à esquerda ou à direita, centralizado ou justificado. </p>
+</font>
+
+<h1> Fonts </h1>
+<font size ="5">
+    <p> Em CSS, usamos a font-familypropriedade para especificar a fonte de um texto. A font-stylepropriedade é usada principalmente para especificar texto em itálico. </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> A font-sizepropriedade define o tamanho do texto. </p>
+</font>
+
+<h1> Icons </h1>
+<font size ="5">
+    <p> O padding define o espaço entre um elemento e sua borda. Assim como a margem, o padding possui 4 propriedades: </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
+</font>
+
+<h1> Links </h1>
+<font size ="5">
+    <p> Os links podem ser estilizados com qualquer propriedade CSS (por exemplo color, font-family, background, etc. </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
+</font>
+
+<h1> Lists </h1>
+<font size ="5">
+    <p> O padding define o espaço entre um elemento e sua borda. Assim como a margem, o padding possui 4 propriedades: </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
+</font>
+
+<h1> Tables </h1>
+<font size ="5">
+    <p> A aparência de uma tabela HTML pode ser muito melhorada com CSS: </p>
+    <ul>
+        <li> padding-top: parte de cima do padding </li>
+        <li> padding-bottom: parte de baixo do padding </li>
+        <li> padding-right: parte direita do padding </li>
+        <li> padding-left: parte esquerda do padding  </li>
+    </ul>
+
+    <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
+</font>
+
+</div>
+<font size ="6">
+    <footer>
+        <dl>
+          <dt> <font color= "blue">&lt;p></font>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DA BAHIA<font color= "blue">&lt;/p></font></dt>
+          <br>
+          <dt> &lt;/<font color= "blue">HTML</font>></dt>
+        </dl>
+    </footer>
+    </font>
+    </body>
+</html>
