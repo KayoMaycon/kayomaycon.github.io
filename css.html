@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>CSS</title>
     <link rel="icon" href="imgs/conhecimento.png" type="image/x-icon">
+
 </head>
 <body>
     <center>
     <header>
-       <font size = "12"> &lt;h1> <font color="white">CSS</font> &lt;/h1> </font>
+       <font size = "12"> &lt;h1> <font color="white">HTML</font> &lt;/h1> </font>
     </header>
 
     <nav style = "background-color: rgb(36, 36, 85);" >
         <table>
             <tr>
-            <th> <a href="pw.html"> INÍCIO </a> </th> 
+            <th> <a href="inicio.html"> INÍCIO </a> </th> 
             <th> <a href="index.html"> HTML</a> </th>
             <th> <a class="active" href="css.html"> CSS </a> </th>
         </tr>       
@@ -180,7 +181,71 @@
     <p> Ele pode receber os valores: length (tamanho especificado em px, cm etc); % (baseia-se na porcentagem da largura do elemento); inherit (é herdado de um outro elemento). </p>
 </font>
 
+<h1> Height/Width </h1>
+<font size ="5">
+    <p> São responsáveis por estipular as proporções do objeto no mundo HTML, o height é referente à altura, enquanto o width determina a largura do elemento. Veja na prática: </p>
+    <img style="width: 30%;" src="img/web.jpg">
+    <p>(width recebe 30% da tela do navegador)</p>
+    <img style="height: 100px;" src="img/web.jpg">
+    <p>(height recebe 100px)</p>
+    <img style="width: 100px; height: 10px;" src="img/web.jpg">
+    <p>(width recebe 100px e o height 10px)</p>
+    <p> Note que quando somente uma das propriedades é especificada (height/width) automaticamente o complemento é ajustado respeitando as proporções iniciais. Os valores podem ser expressos em '%' ou 'px', porcentagem e pixels respectivamente. </p>
+</font>
 
+<h1> Box Model </h1>
+<font size ="5">
+    <p> O termo "Modelo de Caixa" se dá devido a estruturação do HTML seguir um padrão em blocos, os elementos que o compõe são: </p>
+    
+    <img src="img/box.png">
+
+    <p> Por meio do CSS é possível manusear esses espaços atribuindo valores aos mesmos de acordo com o contexto da aplicação. </p>
+</font>
+
+<h1> Outline </h1>
+<font size ="5">
+    <p> É uma linha desenhada aos redor dos elementos, é importante se atentar para não confundir com as bordas, pois elas são externas a tais. As propriedades são: outline-style, outline-color, outline-width, outline-offset e outline. </p>
+    <p>Testando diferentes estilos:</p>
+    <p style="outline-style: dotted;">dotted</p>
+    <p style="outline-style: dashed;">dashed</p>
+    <p style="outline-style: double;">double</p>
+ 
+</font>
+
+<h1> Lists </h1>
+<font size ="5">
+    <p> Pode personalizar a sua lisa com uma infinidade de ferramenta, é necessário apenas mencioná-la no mundo CSS. </p>
+    <img src="img/lista.png">
+</font>
+
+<h1> Tables </h1>
+<font size ="5">
+    <p> A aparência de uma tabela HTML pode ser muito melhorada com CSS: </p>
+    <table id="customers">
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>País</th>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>12</td>
+          <td>Brasil</td>
+        </tr>
+        <tr>
+          <td>Joaquim</td>
+          <td>20</td>
+          <td>França</td>
+        </tr>
+        <tr>
+          <td>Ana Lúcia</td>
+          <td>88</td>
+          <td>Canadá</td>
+        </tr>
+        
+      </table>
+      <br>
+      </font>
 
 </div>
 <font size ="6">
